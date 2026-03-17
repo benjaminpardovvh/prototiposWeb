@@ -1,0 +1,28 @@
+header {
+    text-align: center;/*comentario=explicacion de x cosa*/
+    background-color: firebrick; /*back color=cambiar color de fondo*/
+}
+header:hover {
+    background-color: brown;
+}
+h1 {
+    color:aquamarine;/*color=cambia color de la letra*/
+}
+main {
+    background-color: coral;
+}
+main:hover {
+    background-color: chocolate;
+}
+h2 {
+    color:darkgreen;
+}
+footer {
+    background-color:grey;
+}
+footer:hover {
+    background-color: darkgray;
+}
+p  {
+    color:aqua
+}
