@@ -3,24 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formularios HTML</title>
-</head>
-    <body>
-        <header>
-            <h1>Formularios HTML - Ejemplos</h1>
-        <hr>
-    </header>
-        <main>
-            <h2>Formulario de Registro</h2>
-                <p>Completa los siguientes datos:</p>
-                    <form>
-                        <label>Nombre:</label><!--etiqueta que describe al campo-->
-                            <input type="text" name="nombre" placeholder="Ej: Gustabo Cerati"> <!--campo para el texto o shi-->
-                                <br><br>
-                            <label>Correo Eletronico/Gmail</label>
-                        <input type="email" name="correo" placeholder="example@gmail.com">
-                    <br><br>
-                </form><!--etiqueta para crear un formulario-->
+    <title>formularios  en HTML</title>
+    </head>
+        <body>
+            <header>
+                <h1>Formularios HTML - Ejemplos</h1>
+            <hr>
+        </header>
+            <main>
+                <h2>Formulario de Registro</h2>
+                    <p>Completa los siguientes datos:</p>
+                        <form>
+                            <label>Nombre:</label><!--etiqueta que describe al campo-->
+                                <input type="text" name="nombre" placeholder="Ej: Gustabo Cerati"> <!--campo para el texto o shi-->
+                                    <br><br>
+                                <label>Correo Eletronico/Gmail: </label>
+                            <input type="email" name="correo" placeholder="example@orgnization.com">
+                        <br><br>
+                                <label>Contraseña: </label>
+                                    <input type="password" name="password">
+                                        <br><br>
+                                    <label>Edad: </label>
+                                <input type="number" name="edad"><!--solo puedes colocar solo numeros y la "e" del naneif-->
+                            <br><br>
+                        <label>Fecha de Nacimiento: </label>
+                    <input type="date" name="fechaNac">
+                <br><br>
+                <label>Genero: </label> <br>
+                    <input type="radio" name="genero" value="masculino"><!--elemento de seleccion unica = radio button/boton de radio-->
+                masculino 
+                <input type="radio" name="genero" value="femenino">
+                femenino 
+                <input type="radio" name="genero" value="otros">
+                Otros <br><br>
+            <label>Intereses: </label> <br>
+                <input type="checkbox" name="intereses" value="musica">
+            musica <br>
+        <input type="checkbox" name="intereses" value="deportes"><!--checkbox=elementos de seleccion multiple-->
+    deportes <br>
+            <input type="checkbox" name="intereses" value="peliculas">
+        peliculas <br><br>
+        <label>Ciudad: </label>
+        <select name="Ciudad">
+            <option>Santiago centro</option>
+            <option>Valparaiso</option>
+            <option>Coquimbo</option>
+            <option>Arica</option>
+        </select> <!--select=lista desplegable de opciones--> <br><br>
+        <label>Comentarios: </label>
+        <textarea name="Comentarios" rows="4" cols="30"></textarea><!--textarea=elemento de texto largo con filas y columnas-->
+        <br><br>
+        <label>Subir archivo</label>
+        <input type="file" name="archivo"><!--selecionar un archivo local-->
+        <br><br>
+        <label>Color favorito</label><!--seleccionar un color--><br>
+        <input type="color" name="color">
+        <br><br>
+        <label>Nivel de satisfaccion del servicio: </label>
+        <input type="range" name="satisfaccion" min="1" max="7"> <br><br>
+        <input type="submit" value="Enviar"><!--boton para enviar el formulario-->
+        <input type="reset" value="limpiar">
+        <br><br><!--boton para limpiar el formulario-->
+    </form><!--etiqueta para crear un formulario-->
+    <!--creacion de tabla con datos-->
+    <h2>Tabla de Usuarios</h2>
+    <table border="1">
+        <tr>
+            <th>Nombre</th><!--encabezado de tabla (table head)-->
+            <th>Correo</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Akon</td><!--datos de la tabla (table data)-->
+            <td>*inserte correo*</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Fernando Medida</td>
+            <td>fernandomedina@liceovvh.cl</td>
+            <td>17</td>
+        </tr>
+    </table>
             </main>
         </body>
     </html>
