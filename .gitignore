@@ -1,0 +1,4 @@
+#ignora las siguientes carpetas#
+.git/
+.vscode/
+#porque ignoramos estas carpetas? ni idea man#
